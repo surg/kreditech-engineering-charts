@@ -1,0 +1,213 @@
+[
+  {
+    "expand": "schema,names",
+    "startAt": 0,
+    "maxResults": 50,
+    "total": 8,
+    "issues": [
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,transitions,renderedFields",
+        "id": "74155",
+        "self": "https://kredito.atlassian.net/rest/api/2/issue/74155",
+        "key": "RELEASE-537",
+        "fields": {
+          "customfield_12600": [
+            {
+              "self": "https://kredito.atlassian.net/rest/api/2/customFieldOption/11403",
+              "value": "Kredito24/Zaimo_old",
+              "id": "11403"
+            }
+          ]
+        }
+      },
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,transitions,renderedFields",
+        "id": "74154",
+        "self": "https://kredito.atlassian.net/rest/api/2/issue/74154",
+        "key": "RELEASE-536",
+        "fields": {
+          "customfield_12600": [
+            {
+              "self": "https://kredito.atlassian.net/rest/api/2/customFieldOption/11402",
+              "value": "LPA",
+              "id": "11402"
+            }
+          ]
+        }
+      },
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,transitions,renderedFields",
+        "id": "74077",
+        "self": "https://kredito.atlassian.net/rest/api/2/issue/74077",
+        "key": "RELEASE-534",
+        "fields": {
+          "customfield_12600": [
+            {
+              "self": "https://kredito.atlassian.net/rest/api/2/customFieldOption/11403",
+              "value": "Kredito24/Zaimo_old",
+              "id": "11403"
+            }
+          ]
+        }
+      },
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,transitions,renderedFields",
+        "id": "73522",
+        "self": "https://kredito.atlassian.net/rest/api/2/issue/73522",
+        "key": "RELEASE-531",
+        "fields": {
+          "customfield_12600": [
+            {
+              "self": "https://kredito.atlassian.net/rest/api/2/customFieldOption/11402",
+              "value": "LPA",
+              "id": "11402"
+            }
+          ]
+        }
+      },
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,transitions,renderedFields",
+        "id": "73508",
+        "self": "https://kredito.atlassian.net/rest/api/2/issue/73508",
+        "key": "RELEASE-530",
+        "fields": {
+          "customfield_12600": [
+            {
+              "self": "https://kredito.atlassian.net/rest/api/2/customFieldOption/11403",
+              "value": "Kredito24/Zaimo_old",
+              "id": "11403"
+            }
+          ]
+        }
+      },
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,transitions,renderedFields",
+        "id": "73370",
+        "self": "https://kredito.atlassian.net/rest/api/2/issue/73370",
+        "key": "RELEASE-528",
+        "fields": {
+          "customfield_12600": [
+            {
+              "self": "https://kredito.atlassian.net/rest/api/2/customFieldOption/11403",
+              "value": "Kredito24/Zaimo_old",
+              "id": "11403"
+            }
+          ]
+        }
+      },
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,transitions,renderedFields",
+        "id": "73225",
+        "self": "https://kredito.atlassian.net/rest/api/2/issue/73225",
+        "key": "RELEASE-527",
+        "fields": {
+          "customfield_12600": [
+            {
+              "self": "https://kredito.atlassian.net/rest/api/2/customFieldOption/11403",
+              "value": "Kredito24/Zaimo_old",
+              "id": "11403"
+            }
+          ]
+        }
+      },
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,transitions,renderedFields",
+        "id": "72858",
+        "self": "https://kredito.atlassian.net/rest/api/2/issue/72858",
+        "key": "RELEASE-524",
+        "fields": {
+          "customfield_12600": [
+            {
+              "self": "https://kredito.atlassian.net/rest/api/2/customFieldOption/11403",
+              "value": "Kredito24/Zaimo_old",
+              "id": "11403"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "expand": "schema,names",
+    "startAt": 0,
+    "maxResults": 50,
+    "total": 5,
+    "issues": [
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,transitions,renderedFields",
+        "id": "72799",
+        "self": "https://kredito.atlassian.net/rest/api/2/issue/72799",
+        "key": "RELEASE-523",
+        "fields": {
+          "customfield_12600": [
+            {
+              "self": "https://kredito.atlassian.net/rest/api/2/customFieldOption/11402",
+              "value": "LPA",
+              "id": "11402"
+            }
+          ]
+        }
+      },
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,transitions,renderedFields",
+        "id": "72390",
+        "self": "https://kredito.atlassian.net/rest/api/2/issue/72390",
+        "key": "RELEASE-520",
+        "fields": {
+          "customfield_12600": [
+            {
+              "self": "https://kredito.atlassian.net/rest/api/2/customFieldOption/11402",
+              "value": "LPA",
+              "id": "11402"
+            }
+          ]
+        }
+      },
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,transitions,renderedFields",
+        "id": "71982",
+        "self": "https://kredito.atlassian.net/rest/api/2/issue/71982",
+        "key": "RELEASE-517",
+        "fields": {
+          "customfield_12600": [
+            {
+              "self": "https://kredito.atlassian.net/rest/api/2/customFieldOption/11403",
+              "value": "Kredito24/Zaimo_old",
+              "id": "11403"
+            }
+          ]
+        }
+      },
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,transitions,renderedFields",
+        "id": "71955",
+        "self": "https://kredito.atlassian.net/rest/api/2/issue/71955",
+        "key": "RELEASE-516",
+        "fields": {
+          "customfield_12600": [
+            {
+              "self": "https://kredito.atlassian.net/rest/api/2/customFieldOption/11402",
+              "value": "LPA",
+              "id": "11402"
+            }
+          ]
+        }
+      },
+      {
+        "expand": "operations,versionedRepresentations,editmeta,changelog,transitions,renderedFields",
+        "id": "71739",
+        "self": "https://kredito.atlassian.net/rest/api/2/issue/71739",
+        "key": "RELEASE-511",
+        "fields": {
+          "customfield_12600": [
+            {
+              "self": "https://kredito.atlassian.net/rest/api/2/customFieldOption/11403",
+              "value": "Kredito24/Zaimo_old",
+              "id": "11403"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
