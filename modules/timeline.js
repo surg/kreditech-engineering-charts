@@ -17,12 +17,15 @@ var Timeline = {
         }).reverse();
     },
 
-    week_labels: function(ranges) {
+    weekLabels: function(ranges) {
         return ranges.map(function(range) {
             return 'CW' + range.week;
         });
-    }
+    },
 
+    currentWeek: function() {
+        return moment().week();
+    }
 
 };
 

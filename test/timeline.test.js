@@ -32,7 +32,7 @@ describe("Timeline Test", function() {
 
     it('Week labels', function() {
         var weeks = timeline.weeks({count: 2, now: moment('2015-11-13')});
-        var labels = timeline.week_labels(weeks);
+        var labels = timeline.weekLabels(weeks);
         expect(labels).to.be.deep.equal(['CW45', 'CW46']);
     });
 });

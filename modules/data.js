@@ -1,7 +1,8 @@
 var async = require('async');
 var debug = require('debug')('engineering-charts:data');
 var jira = require('./jira_api');
-var timeline = require('./timeline')
+var timeline = require('./timeline');
+var cache = require('memory-cache');
 
 function platforms(response) {
     var platforms = {};
@@ -24,23 +25,47 @@ function platforms(response) {
     });
 }
 
+function fetchData(query, callback) {
+    function fromMemory(callback) {
+        if (!query.lastWeek)
+            return callback(null, cache.get(query.jql));
+        return callback(null, null); // indication we need to fetch from the next source
+    }
+
+    function fromJira(prevResult, callback) {
+        if (prevResult) {
+            debug('Found previously saved data. Skipping jira call. Query: ' + query.jql);
+            return callback(null, prevResult); // just pass on
+        }
+        jira.find(query, function(err, result) {
+            if (!err) {
+                cache.put(query.jql, result);
+            }
+            callback(err, result);
+        });
+    }
+
+    async.waterfall([fromMemory, fromJira], callback);
+}
+
 var Data = {
     releasesPerWeekPerPlatform: function (ranges, team, callback) {
         var jqls = ranges.map(function (range) {
             return {
                 jql: `project=RELEASE AND resolutiondate > ${range.start}
                        and resolutiondate <= ${range.end} and team = "${team}"`,
-                fields: jira.PLATFORM_FIELD
+                fields: jira.PLATFORM_FIELD,
+                lastWeek: range.week == timeline.currentWeek()
             };
         });
-        async.mapSeries(jqls, jira.find, function (err, results) {
+        async.mapSeries(jqls, fetchData, function (err, results) {
             if (err) {
                 console.error(err);
                 callback(err);
             } else {
 
                 var res = {
-                    weeks: timeline.week_labels(ranges),
+                    weeks: timeline.weekLabels(ranges),
                     platforms: platforms(results)
                 };
 
