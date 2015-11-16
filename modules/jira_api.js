@@ -11,6 +11,7 @@ function jira_config(callback) {
 
 function jira_call(query) {
     return function (creds, callback) {
+        query['maxResults'] = JiraAPI.MAX_RESULTS;
         debug(`Looking for issue with query: ${query.jql}`);
         unirest.get('https://kredito.atlassian.net/rest/api/2/search')
             .header('Accept', 'application/json')
@@ -22,7 +23,7 @@ function jira_call(query) {
                     return callback(response.body.errorMessages);
                 }
                 debug('Response: ' + response.body);
-                callback(null, response.body)
+                callback(null, response.body);
             });
     }
 
@@ -30,6 +31,7 @@ function jira_call(query) {
 
 var JiraAPI = {
     PLATFORM_FIELD: 'customfield_12600',
+    MAX_RESULTS: 300,
     find: function (query, callback) {
         async.waterfall([jira_config, jira_call(query)], callback);
     }
